@@ -1,13 +1,16 @@
-const button = document.getElementById('myButton')
+document.addEventListener('DOMContentLoaded', function () {
+	const button = document.getElementById('myButton')
+	const outputDiv = document.getElementById('output')
 
-button.addEventListener('click', function () {
-	alert('I was pressed!')
-})
+	button.addEventListener('click', function () {
+		outputDiv.textContent = 'I was pressed!'
+	})
 
-button.addEventListener('mouseover', function () {
-	alert('Mouse on me!')
-})
+	button.addEventListener('mouseover', function () {
+		outputDiv.textContent = 'Mouse on me!'
+	})
 
-button.addEventListener('mouseout', function () {
-	alert('Mouse is not on me!')
+	button.addEventListener('mouseout', function () {
+		outputDiv.textContent = 'Mouse is not on me!'
+	})
 })
